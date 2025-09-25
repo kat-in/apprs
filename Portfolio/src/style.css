@@ -253,21 +253,32 @@ h3 {
     width: 220px;
     text-align: right;
 }
-
 /* HERO SECTION END */
 
 /* ABOUT SECTION START */
 .about {
     display: flex;
+    gap:40px;
+    padding: 60px 20px;
+    justify-content: flex-start;
 }
 
 .about__block {
-
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
 
 .about__block img {
+    object-fit: cover;
     width: 440px;
     height: 440px;
+}
+
+.about__text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
 }
 
 /* ABOUT SECTION END */
