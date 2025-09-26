@@ -1,11 +1,16 @@
 @font-face {
     font-family: "Oswald";
-    src: url(./fonts/Oswald.ttf);
+    src: url(./src/fonts/Oswald.ttf);
 }
 
 @font-face {
     font-family: "Mulish";
-    src: url(./fonts/Mulish.ttf);
+    src: url(./src/fonts/Mulish.ttf);
+}
+
+@font-face {
+    font-family: "Mulish Italic";
+    src: url(./src/fonts/Mulish-Italic.ttf);
 }
 
 * {
@@ -14,8 +19,15 @@
     box-sizing: border-box;
 }
 
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
 
 body {
+  font-size: 1.6rem;
+  font-family: "Mulish", sans-serif;
   background-color: #F2F2F2;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -74,6 +86,7 @@ h4 {
   color: #222;
   border: none;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .text {
@@ -175,6 +188,7 @@ h4 {
  text-decoration: none;
  color: #FF3C3C;
  transition: all 0.3s ease;
+ cursor: pointer;
 }
 
 /* HEADER  END */
@@ -258,7 +272,7 @@ h4 {
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    background-image: url(./img/arrow-down.svg);
+    background-image: url(./src/img/arrow-down.svg);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -267,10 +281,12 @@ h4 {
 
 .scroll_icon:hover {
     color: #FF3C3C;
+    cursor: pointer;
+
 }
 
 .scroll_icon:hover::after {
-    background-image: url(./img/arrow-down-hover.svg); 
+    background-image: url(./src/img/arrow-down-hover.svg); 
 }
 
 .hero__main__block__2 {
@@ -475,6 +491,18 @@ h4 {
   box-sizing: border-box;
 }
 
+.price__card:hover {
+  border: 1px solid #FF3C3C;
+}
+
+.price__card:hover .button {
+  background-color: #FF3C3C;
+  color: #222;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
 .price__card__package {
   display: flex;
   flex-direction: column;
@@ -509,8 +537,7 @@ h4 {
 }
 
 .price__card__slogan {
-  font-family: 'Mulish';
-  font-style: italic;
+  font-family: 'Mulish Italic', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -559,6 +586,21 @@ h4 {
   box-sizing: border-box;
 }
 
+.accordion__answer {
+  margin: 0;
+  display: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+}
+
+
+.accordion__item.active .accordion__answer {
+  display: flex;
+  padding: 0px 0px 20px;
+}
+
 .accordion__item::after {
   content: "";
   position: absolute;
@@ -579,32 +621,54 @@ h4 {
   padding: 18px 0;
 }
 
-.accordion__icon { 
+.accordion__question:hover {
+  color:#FF3C3C;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.accordion__item.active .accordion__question:hover {
+  color:white;
+  cursor: pointer;
+}
+
+
+.minus {
+  display: flex;
+  background-image: url(./src/img/minus.svg);
+  background-repeat: no-repeat;
+  background-position: center center; 
   height: 24px;
-  width: 24px;
+  width: 24px;;
+}
+
+.plus {
+  display: flex;
+  background-image: url(./src/img/plus.svg);
+  background-repeat: no-repeat;
+  background-position: center center; 
+  height: 24px;
+  width: 24px;;
+}
+
+.accordion__question:hover .minus {
+  background-image: url(./src/img/minus.svg);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.accordion__question:hover .plus {
+  background-image: url(./src/img/plus-hover.svg);
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 
-.accordion__answer {
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 0px 20px;
-}
 
-.close {
+.active {
   display: flex;
-  display: none;
   padding: 0;
 }
-
-.close p {
-  display: none;
-  padding: 0;
-}
-
 
 /* FAQ SECTION END */
 
@@ -643,6 +707,12 @@ h4 {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
+
+.form input:hover {
+  border: 1px solid #FF3C3C;
+  color: #222;
+  transition: all 0.3s ease;
 }
 
 
