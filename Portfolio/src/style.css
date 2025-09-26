@@ -478,23 +478,144 @@ h4 {
 
 /* FAQ SECTION START */
 .faq {
-    background-color: #222;
-    color: white;
-    
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  padding: 60px 20px;
+  
 }
 
 .faq__description {
-
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: start;
+  justify-content: start;
+  width: 50%;              
+  flex-grow: 1;
 }
 
-.faq__questions__block {
+.accordion {
+  width: 50%;              
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+ 
+}
 
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 0;
+  border-bottom: 1px solid #FFFFFF;
+  box-sizing: border-box;
+}
+
+
+
+.accordion__question {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.accordion__question h3 {
+  flex-grow: 1;
+}
+
+.accordion__icon { 
+  height: 24px;
+  width: 24px;
+}
+
+.accordion__answer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 0px 20px;
 }
 
 /* FAQ SECTION END */
 
 /* FOOTER START */
 .footer {
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0 0 0;
 }
+
+
+.form {
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  gap: 8px;
+}
+
+.form input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 60px;
+  padding: 0 12px;
+  width: 380px;
+  max-width: 380px;
+  box-sizing: border-box;
+  border: 1px solid #222222;
+  color: #222;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+.form input::placeholder {
+  color: #989898;
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+
+
+.footer__navigation {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.footer__navigation ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer button {
+  width: 200px;
+  min-width: 200px;
+  height: 60px;
+}
+
 /* FOOTER END */
