@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  base: '/apprs/',  
+  base: '/apprs/Portfolio',  
   build: {
     sourcemap: true,
     minify: false,
