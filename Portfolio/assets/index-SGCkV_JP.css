@@ -1,14 +1,14 @@
 @font-face {
   font-family: "Oswald";
-  src: url(/apprs/assets/Oswald-BUACCyM8.ttf);
+  src: url(/apprs/Portfolio/assets/Oswald-BUACCyM8.ttf);
 }
 @font-face {
   font-family: "Mulish";
-  src: url(/apprs/assets/Mulish-_2HM9Tml.ttf);
+  src: url(/apprs/Portfolio/assets/Mulish-_2HM9Tml.ttf);
 }
 @font-face {
   font-family: "Mulish Italic";
-  src: url(/apprs/assets/Mulish-Italic-C2Q85eQT.ttf);
+  src: url(/apprs/Portfolio/assets/Mulish-Italic-C2Q85eQT.ttf);
 }
 * {
   margin: 0;
