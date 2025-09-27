@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
+  base: '/apprs/',  
   build: {
-    sourcemap: true,   // включаем source maps
-    minify: false,     // отключаем минификацию
-    outDir: 'dist',    // папка сборки
+    sourcemap: true,
+    minify: false,
+    outDir: 'dist',
   }
 })
