@@ -1,0 +1,44 @@
+@use '../abstract' as *;
+
+/* HEADER  START */
+.header {
+    background-color: $color-dark;
+    color: $color-white;
+    display: flex;
+    min-height: 60px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+      @include media-tablet {
+        display: none;
+    }
+      @include media-mobile {
+        display: flex;
+    }
+
+}
+
+.header .hamburger_icon {
+  @include media-desktop {
+        display: none;
+    }
+  @include media-mobile {
+        display: flex;
+    }
+}
+
+.header .navigation {
+  @include media-mobile {
+        display: none;
+    }
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+}
+

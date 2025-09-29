@@ -1,0 +1,26 @@
+@use '../abstract' as *;
+
+.navigation {
+  display: flex;
+  list-style: none;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  @include font($height: 2.4rem, $size: 1.6rem);
+
+  li {
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-red;
+      @extend %transition;
+      cursor: pointer;
+    }
+  }
+}

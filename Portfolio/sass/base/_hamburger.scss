@@ -1,0 +1,43 @@
+@use '../abstract' as *;
+
+.hamburger {
+    display: none;
+    background-color: $color-dark;
+    color: $color-white;
+    min-height: 60px;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-tablet {
+        display: flex;
+    }
+    
+  @include media-mobile {
+        display: none;
+    }
+
+}
+
+
+.hamburger_icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60px;
+    width: 60px;
+    gap: 6px;
+    padding: 0 20px;
+}
+
+.hamburger_line {
+    height: 2px;
+    width: 20px;
+    background-color: #fff;
+}
+
+.hamburger_small_line {
+    height: 2px;
+    width: 12px;
+    background-color: #fff;
+}
