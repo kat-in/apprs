@@ -13,6 +13,18 @@
   padding: $padding;
 }
 
+@mixin disable-effects {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  *:hover {
+    all: unset;
+  }
+}
+
+
 @mixin media-desktop {
   @media (max-width: $desktop-width) {
     @content;
@@ -32,14 +44,14 @@
 
 
 @mixin media-mobile {
-  @media (max-width: $mobile-width) {
+  @media (max-width: $mobile-width) and (pointer: coarse) {
     @content;
   }
 }
 
-//для touch устройств
 @mixin media-touch {
-  @media (min-width: $desktop-width) and (pointer: coarse) and (hover: none) {
- @content;
+  @media (pointer: coarse) and (hover: none) {
+@content;
 }
 }
+

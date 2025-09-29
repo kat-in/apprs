@@ -21,6 +21,18 @@
       color: $color-red;
       @extend %transition;
       cursor: pointer;
+      }
+  }
+}
+
+@include media-touch {
+  .navigation a {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+
+    &:hover {
+      color: inherit; 
     }
   }
 }

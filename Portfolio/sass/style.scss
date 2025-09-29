@@ -154,6 +154,10 @@
     display: none;
   }
 
+  @include media-mobile {
+    display: none;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -176,6 +180,25 @@
     &::after {
       background-image: url(../src/img/arrow-down-hover.svg);
     }
+  }
+}
+
+
+@include media-touch {
+  .scroll_icon {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+
+    &:hover {
+      color: inherit;
+
+      &::after {
+        background-image: url(../src/img/arrow-down.svg);
+      }
+    }
+
+
   }
 }
 
@@ -248,9 +271,11 @@
   @include media-big-tablet {
     display: none;
   }
+
   @include media-tablet {
     display: none;
   }
+
   @include media-mobile {
     display: none;
   }
@@ -259,7 +284,7 @@
 
 .about__block img {
   object-fit: cover;
-  align-self: centerq;
+  align-self: center;
   width: 44rem;
   height: 44rem;
 
@@ -394,6 +419,25 @@
       border: none;
       @extend %transition;
       cursor: pointer;
+    }
+  }
+}
+
+
+@include media-touch {
+  .price__card {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+
+    &:hover {
+      border: 1px solid $color-dark;
+      .button {
+        background-color: $color-dark;
+        color: $color-white;
+        transition: none !important;
+        animation: none !important;
+      }
     }
   }
 }
@@ -541,6 +585,18 @@
   cursor: pointer;
 }
 
+@include media-touch {
+  .accordion__question {
+    transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+
+    &:hover {
+      color: inherit;
+    }
+  }
+}
+
 .accordion__item.active .accordion__question:hover {
   color: white;
   cursor: pointer;
@@ -577,6 +633,14 @@
   background-image: url(../src/img/plus-hover.svg);
   @extend %transition;
   cursor: pointer;
+}
+
+
+@include media-touch {
+  .accordion__question:hover .plus {
+    transition: none !important;
+    background-image: url(../src/img/plus.svg);
+  }
 }
 
 .active {

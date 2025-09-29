@@ -33,12 +33,14 @@
   color: $color-dark;
   text-transform: uppercase;
   font-family: 'Oswald';
-  @include font($size: 1.6rem, $height:2.4rem);
+  @include font($size: 1.6rem, $height: 2.4rem);
+
   @include media-tablet {
     width: 256px;
   }
+
   @include media-mobile {
-  width: 340px;
+    width: 340px;
   }
 }
 
@@ -47,6 +49,31 @@
   border: 1px solid $color-red;
   color: $color-dark;
   @extend %transition;
+}
+
+
+.form input:focus {
+  outline: none;
+  border: 1px solid $color-red;
+  color: $color-dark;
+  @extend %transition;
+}
+
+@include media-touch {
+  .form input {
+    transition: none !important;
+    animation: none !important;
+
+    &:hover {
+      border: 1px solid $color-dark;
+      transition: none !important;
+    }
+
+    &:focus {
+      border: 1px solid $color-dark;
+      transition: none !important;
+    }
+  }
 }
 
 
@@ -76,7 +103,8 @@
   @include font($weight: 400, $height: 2.4rem, $size: 1.6rem);
   text-transform: uppercase;
 
-  
+
+
 
   ul {
     display: flex;
@@ -85,25 +113,26 @@
     align-items: center;
 
     @include media-mobile {
-    flex-direction: column;
+      flex-direction: column;
 
 
-    li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 0 20px;
-      height: 60px;
+      li {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+      }
     }
-  }
   }
 
   button {
     width: 200px;
     min-width: 200px;
     height: 60px;
+
     @include media-mobile {
-     width: 340px;
+      width: 340px;
     }
   }
 }

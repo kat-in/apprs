@@ -6,6 +6,12 @@
     box-sizing: border-box;
 }
 
+// @include media-touch {
+//   body {
+//     @include disable-effects;
+//   }
+// }
+
 html {
   font-size: 10px;
   scroll-behavior: smooth;
@@ -15,7 +21,7 @@ html {
 body {
   @include font($size: 1.6rem, $weight: 400, $height:2.4rem);
   font-family: "Mulish", sans-serif;
-  background-color: #F2F2F2;
+  background-color: $color-dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
