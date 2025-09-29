@@ -6,15 +6,15 @@
     box-sizing: border-box;
 }
 
-// @include media-touch {
-//   body {
-//     @include disable-effects;
-//   }
-// }
-
 html {
   font-size: 10px;
   scroll-behavior: smooth;
+}
+
+@include media-touch {
+  html {
+    scroll-behavior: auto !important;
+  }
 }
 
 
@@ -68,8 +68,14 @@ h4 {
   height: 60px;
   min-width: 200px;
   padding: 0 20px;
+  margin: 0;
+  border: none;
+  font-family: 'Oswald';
+  text-transform: uppercase;
   background-color: $color-dark;
   color: $color-white;
+  @include font($size: 1.6rem, $height: 2.4rem)
+  
 }
 
 .button:hover {
