@@ -395,11 +395,6 @@ html {
   scroll-behavior: smooth;
 }
 
-@media (pointer: coarse) and (hover: none) {
-  html {
-    scroll-behavior: auto !important;
-  }
-}
 body {
   font-size: 1.6rem;
   font-weight: 400;
@@ -705,7 +700,7 @@ h4 {
 }
 @media (max-width: 1139px) {
   .header {
-    display: none;
+    display: flex;
   }
 }
 @media (max-width: 767px) and (pointer: coarse) {
@@ -724,8 +719,18 @@ h4 {
     display: flex;
   }
 }
+@media (max-width: 1139px) {
+  .header .hamburger_icon {
+    display: flex;
+  }
+}
 
 @media (max-width: 767px) and (pointer: coarse) {
+  .header .navigation {
+    display: none;
+  }
+}
+@media (max-width: 1139px) {
   .header .navigation {
     display: none;
   }
