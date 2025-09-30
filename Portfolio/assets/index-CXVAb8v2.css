@@ -679,6 +679,20 @@ h4 {
   }
 }
 
+@media (pointer: coarse) and (hover: none) {
+  .button:hover {
+    background-color: #222;
+    color: #fff;
+    transition: none !important;
+    animation: none !important;
+  }
+  .button:active {
+    background-color: #222;
+    color: #fff;
+    transition: none !important;
+    animation: none !important;
+  }
+}
 /* HEADER  START */
 .header {
   background-color: #222;
