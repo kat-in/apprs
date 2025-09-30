@@ -2,25 +2,6 @@
 
 .hamburger {
     display: none;
-    background-color: $color-dark;
-    color: $color-white;
-    min-height: 60px;
-    justify-content: space-between;
-    align-items: center;
-
-    @include media-tablet {
-        display: flex;
-    }
-    
-  @include media-mobile {
-        display: none;
-    }
-
-}
-
-
-.hamburger_icon {
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
@@ -28,16 +9,28 @@
     width: 60px;
     gap: 6px;
     padding: 0 20px;
+
+    @include media-desktop {
+        display: none;
+    }
+
+    @include media-mobile {
+        display: flex;
+    }
+
+    @include media-tablet {
+        display: flex;
+    }
 }
 
 .hamburger_line {
     height: 2px;
     width: 20px;
-    background-color: #fff;
+    background-color: $color-white;
 }
 
 .hamburger_small_line {
     height: 2px;
     width: 12px;
-    background-color: #fff;
+    background-color: $color-white;
 }

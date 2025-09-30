@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <link rel="icon" type="image/svg+xml" href="./src/img/logo.svg">
@@ -7,11 +8,13 @@
   <link rel="stylesheet" type="text/css" href="./sass/style.scss">
   <title>Portfolio</title>
 </head>
+
 <body>
 
 
-<!--  HEADER -->
-    <header class="header wrapper">
+  <!--  HEADER -->
+  <header class="full__width__section dark_bg">
+    <div class="header content__wrapper">
       <div class="logo">
         <object data="./src/img/logo.svg" type="image/svg+xml" class="logo-svg">
           Your brouser doesn't support svg
@@ -23,183 +26,190 @@
         <li><a href="#price">Price</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="#contacts">Contacts</a></li>
-      </ul>     
+      </ul>
 
-      <span class="hamburger_icon">
+      <div class="hamburger">
         <span class="hamburger_small_line"></span>
         <span class="hamburger_line"></span>
-       </span>
-    </header>
+      </div>
+    </div>
+  </header>
 
 
-<!--  SECTION HERO -->
-    <section class="hero dark_section wrapper">
-      <div class="hero__line__block">
-        <div class="small vertical">Best Photographer by MAX</div>
-        <div class="line"></div>
-        <div class="small vertical">2025</div>
-      </div>
-      <div class="hero__content">
-        <div class="hero__block__1">
-          <div class="info__block">
-            <div class="info__block__statistic">
-              <div class="statistic__block">
-                <p class="decoration">+</p>
-                <div class="statistic__block__numbers">
-                   <p class="decoration">487</p>
-                   <p>Photo sessions</p>
-                </div>  
-              </div>
-              <div class="statistic__block">
-                <p class="decoration">+</p>
-                <div class="statistic__block__numbers">
-                   <p class="decoration">356</p>
-                   <p>Satisfied clients</p>
-                </div>  
-              </div>
-              <div></div>
-            </div>
-            <h1>Professional photographer</h1>
-            <h3>Capture the Moment. Tell Your Story.</h3>
-          </div>
-          <div class="scroll__down">
-              <a  class="scroll_icon" href="#contacts">Scroll down</a>
-          </div>
-        </div>
-        <div class="hero__block__2">
-          <div class="img_small">
-            <img src="./src/img/img-10.webp" alt="photography">
-          </div>
-        </div>
-        <div class="hero__block__3 img_medium">
-          <img src="./src/img/img-11.webp" alt="photographer">
-          <p>Hi! I’m Vera, a photographer. For me, photography is more than just an image.</p>
-        </div>
-      </div>
+
+  <!--  SECTION HERO -->
    
-    </section>
- 
-<!--  SECTION ABOUT -->
-    <section class="about white_section section__wrapper wrapper" id="about">
-      <div class="about__block">
-        <img src="./src/img/img-photographer-1.webp" alt="img-photographer-1">
+  <section class="full__width__section dark_bg">
+  <div class="hero content__wrapper">
+    <div class="hero__line__block">
+      <div class="small vertical">Best Photographer by MAX</div>
+      <div class="line"></div>
+      <div class="small vertical">2025</div>
+    </div>
+    <div class="hero__content">
+      <div class="hero__block__1">
+        <div class="info__block">
+          <div class="info__block__statistic">
+            <div class="statistic__block">
+              <p class="decoration">+</p>
+              <div class="statistic__block__numbers">
+                <span class="decoration">487</span>
+                <span>Photo sessions</span>
+              </div>
+            </div>
+            <div class="statistic__block">
+              <span class="decoration">+</span>
+              <div class="statistic__block__numbers">
+                <span class="decoration">356</span>
+                <span>Satisfied clients</span>
+              </div>
+            </div>
+
+          </div>
+          <h1>Professional photographer</h1>
+          <h3>Capture the Moment. Tell Your Story.</h3>
+        </div>
+        <div class="scroll__down">
+          <a class="scroll_icon" href="#about">Scroll down</a>
+        </div>
+      </div>
+      <div class="hero__block__2">
+        <div class="img_small">
+          <img src="./src/img/img-10.webp" alt="photography">
+        </div>
+      </div>
+      <div class="hero__block__3 img_medium">
+        <img src="./src/img/img-11.webp" alt="photographer">
+        <p>Hi! I’m Vera, a photographer. For me, photography is more than just an image.</p>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!--  SECTION ABOUT -->
+  <section class="about white_section section__wrapper wrapper" id="about">
+    <div class="about__block">
+      <img src="./src/img/img-photographer-1.webp" alt="img-photographer-1">
       <div class="about__text">
-          <h2>About me</h2>
-          <p>Hi! I’m Vera, a photographer with 5 years of experience. For me, photography is more than just an image. It’s a way to feel the moment, capture the atmosphere, and freeze time. I work with people, stories, and emotions.</p>
-        </div>
+        <h2>About me</h2>
+        <p>Hi! I’m Vera, a photographer with 5 years of experience. For me, photography is more than just an image. It’s
+          a way to feel the moment, capture the atmosphere, and freeze time. I work with people, stories, and emotions.
+        </p>
       </div>
-      <div class="about__block">
-        <p>I shoot all across Europe. I love natural light, genuine emotions, and beautiful details. Each shot is a small piece of art. My goal is to create timeless images that tell your unique story.</p>
-        <img src="./src/img/img-photographer-2.webp" alt="img-photographer-2">
-      </div>
-      <div class="about__block">
-         <img src="./src/img/img-photographer-3.webp" alt="img-photographer-3">
-         <p>Seeing with heart. Shooting with soul.</p>
-      </div>
-    </section>
+    </div>
+    <div class="about__block">
+      <p>I shoot all across Europe. I love natural light, genuine emotions, and beautiful details. Each shot is a small
+        piece of art. My goal is to create timeless images that tell your unique story.</p>
+      <img src="./src/img/img-photographer-2.webp" alt="img-photographer-2">
+    </div>
+    <div class="about__block">
+      <img src="./src/img/img-photographer-3.webp" alt="img-photographer-3">
+      <p>Seeing with heart. Shooting with soul.</p>
+    </div>
+  </section>
 
-<!--  SECTION PORTFOLIO -->
+  <!--  SECTION PORTFOLIO -->
 
-    <section class="portfolio dark_section section__wrapper" id="portfolio">
-      <div class="portfolio__wrapper">
-        <div class="portfolio__block wrapper">
-          <h2>My Portfolio</h2>
-          <p>Every shoot is a story. Here you’ll find portraits, love stories, family sessions, and more.</p>
-        </div>
-        <div class="slider transition-right">
-          <div class="slide_1_8">
-            <div class="img_big">
-              <img src="./src/img/img-14.webp" alt="slide 1">
-            </div>
-          </div>
-          <div class="slide_2_6_9">
-            <div class="img_small">
-              <img src="./src/img/img-21.webp" alt="slide 2">
-            </div>
-          </div>
-          <div class="slide_3_5_11">
-            <div class="img_medium">
-              <img src="./src/img/img-22.webp" alt="slide 3">
-            </div>
-          </div>
-          <div class="slide_4_12">
-            <div class="img_big">
-              <img src="./src/img/img-20.webp" alt="slide 4">
-            </div>
-          </div>
-          <div class="slide_3_5_11">
-            <div class="img_medium">
-              <img src="./src/img/img-17.webp" alt="slide 5">
-            </div>
-          </div>
-          <div class="slide_2_6_9">
-            <div class="img_small">
-              <img src="./src/img/img-1.webp" alt="slide 6">
-            </div>
-          </div>
-          <div class="slide_7_10">
-            <div class="img_medium">
-              <img src="./src/img/img-2.webp" alt="slide 7">
-            </div>
-          </div>
-          <div class="slide_1_8">
-            <div class="img_big">
-              <img src="./src/img/img-5.webp" alt="slide 8">
-            </div>
-          </div>
-          <div class="slide_2_6_9">
-            <div class="img_small">
-              <img src="./src/img/img-7.webp" alt="slide 9">
-            </div>
-          </div>
-          <div class="slide_7_10">
-            <div class="img_medium">
-              <img src="./src/img/img-8.webp" alt="slide 10">
-            </div>
-          </div>
-          <div class="slide_3_5_11">
-            <div class="img_medium">
-              <img src="./src/img/img-9.webp" alt="slide 11">
-            </div>
-          </div>
-          <div class="slide_4_12">
-            <div class="img_big">
-              <img src="./src/img/img-12.webp" alt="slide 12">
-            </div>
+  <section class="portfolio dark_bg section__wrapper" id="portfolio">
+    <div class="portfolio__wrapper">
+      <div class="portfolio__block content__wrapper">
+        <h2>My Portfolio</h2>
+        <p>Every shoot is a story. Here you’ll find portraits, love stories, family sessions, and more.</p>
+      </div>
+      <div class="slider transition-right">
+        <div class="slide_1_8">
+          <div class="img_big">
+            <img src="./src/img/img-14.webp" alt="slide 1">
           </div>
         </div>
+        <div class="slide_2_6_9">
+          <div class="img_small">
+            <img src="./src/img/img-21.webp" alt="slide 2">
+          </div>
+        </div>
+        <div class="slide_3_5_11">
+          <div class="img_medium">
+            <img src="./src/img/img-22.webp" alt="slide 3">
+          </div>
+        </div>
+        <div class="slide_4_12">
+          <div class="img_big">
+            <img src="./src/img/img-20.webp" alt="slide 4">
+          </div>
+        </div>
+        <div class="slide_3_5_11">
+          <div class="img_medium">
+            <img src="./src/img/img-17.webp" alt="slide 5">
+          </div>
+        </div>
+        <div class="slide_2_6_9">
+          <div class="img_small">
+            <img src="./src/img/img-1.webp" alt="slide 6">
+          </div>
+        </div>
+        <div class="slide_7_10">
+          <div class="img_medium">
+            <img src="./src/img/img-2.webp" alt="slide 7">
+          </div>
+        </div>
+        <div class="slide_1_8">
+          <div class="img_big">
+            <img src="./src/img/img-5.webp" alt="slide 8">
+          </div>
+        </div>
+        <div class="slide_2_6_9">
+          <div class="img_small">
+            <img src="./src/img/img-7.webp" alt="slide 9">
+          </div>
+        </div>
+        <div class="slide_7_10">
+          <div class="img_medium">
+            <img src="./src/img/img-8.webp" alt="slide 10">
+          </div>
+        </div>
+        <div class="slide_3_5_11">
+          <div class="img_medium">
+            <img src="./src/img/img-9.webp" alt="slide 11">
+          </div>
+        </div>
+        <div class="slide_4_12">
+          <div class="img_big">
+            <img src="./src/img/img-12.webp" alt="slide 12">
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-<!--  SECTION PRICE -->
+  <!--  SECTION PRICE -->
 
-    <section class="price white_section section__wrapper wrapper" id="price">
-      <div class="price__descripton">
-        <h2>Packages & Pricing</h2>
-        <p>Choose the package that suits your story. All options are customizable to your needs.</p>
-      </div>
-      <div class="price__cards__block">
-       <div class="price__card">
-         <div class="price__card__package">
-           <h3>Mini</h3>
-           <ul>
+  <section class="price white_section section__wrapper wrapper" id="price">
+    <div class="price__descripton">
+      <h2>Packages & Pricing</h2>
+      <p>Choose the package that suits your story. All options are customizable to your needs.</p>
+    </div>
+    <div class="price__cards__block">
+      <div class="price__card">
+        <div class="price__card__package">
+          <h3>Mini</h3>
+          <ul>
             <li>Up to 1 hour of shooting</li>
             <li>1 outfit / 1 location</li>
             <li>20 edited photos</li>
             <li>Online gallery</li>
             <li>Delivery within 7 days</li>
-           </ul>
-           <h4>€150</h4>
-          </div>
-         <div class="price__card__button">
-          <p class="price__card__slogan">For short sessions and quick results</p>
-           <button class="button">Book Now</button>
-         </div>
+          </ul>
+          <h4>€150</h4>
         </div>
-       <div class="price__card">
-         <div class="price__card__package">
-            <h3>Classic</h3>
-            <ul>
+        <div class="price__card__button">
+          <p class="price__card__slogan">For short sessions and quick results</p>
+          <button class="button">Book Now</button>
+        </div>
+      </div>
+      <div class="price__card">
+        <div class="price__card__package">
+          <h3>Classic</h3>
+          <ul>
             <li>Up to 2 hours of shooting</li>
             <li>2 outfits / 2 locations</li>
             <li>40+ edited photos</li>
@@ -207,18 +217,18 @@
             <li>Pre-shoot consultation</li>
             <li>Posing guidance</li>
             <li>Delivery within 10 days</li>
-           </ul>
-           <h4>€280</h4>
-         </div>
-         <div class="price__card__button">
-            <p class="price__card__slogan">Perfect for couples, portraits, or lifestyle</p>
-            <button class="button">Book Now</button>
-         </div>
-       </div>
-       <div class="price__card">
-         <div class="price__card__package">
-           <h3>Story</h3>
-           <ul>
+          </ul>
+          <h4>€280</h4>
+        </div>
+        <div class="price__card__button">
+          <p class="price__card__slogan">Perfect for couples, portraits, or lifestyle</p>
+          <button class="button">Book Now</button>
+        </div>
+      </div>
+      <div class="price__card">
+        <div class="price__card__package">
+          <h3>Story</h3>
+          <ul>
             <li>Up to 4 hours of shooting</li>
             <li>3–4 outfits and locations</li>
             <li>80+ edited photos</li>
@@ -227,18 +237,18 @@
             <li>Moodboard and styling help</li>
             <li>Includes breaks and travel time</li>
             <li>Delivery within 14 days</li>
-           </ul>
-           <h4>€450</h4>
-         </div>
-         <div class="price__card__button">
+          </ul>
+          <h4>€450</h4>
+        </div>
+        <div class="price__card__button">
           <p class="price__card__slogan">For when you want to capture everything</p>
-           <button class="button">Book Now</button>
-         </div>
-       </div>
-       <div class="price__card">
-         <div class="price__card__package">
+          <button class="button">Book Now</button>
+        </div>
+      </div>
+      <div class="price__card">
+        <div class="price__card__package">
           <h3>Wedding</h3>
-           <ul>
+          <ul>
             <li>Up to 8 hours of shooting</li>
             <li>All key moments covered</li>
             <li>250+ artistically edited photos</li>
@@ -247,121 +257,141 @@
             <li>Delivery within 21 days</li>
             <li>Extras: photo album, prints</li>
             <li>Optional second-day shoot</li>
-           </ul>
-           <h4>€900</h4>
-         </div>
-         <div class="price__card__button">
+          </ul>
+          <h4>€900</h4>
+        </div>
+        <div class="price__card__button">
           <p class="price__card__slogan">Full-day or partial wedding coverage</p>
-           <button class="button">Book Now</button>
-         </div>
-       </div>
-      </div>
-    </section>
-
-<!--  SECTION FAQ -->
-
-    <section class="faq dark_section section__wrapper wrapper" id="faq">
-      <div class="faq__description">
-        <h2>Frequently Asked Questions</h2>
-        <p>Everything You Wanted to Ask (and a Bit More)</p>
-      </div>
-      <div class="accordion">
-        <div class="accordion__item active">
-          <div class="accordion__question">
-            <h3>How do I book a shoot?</h3>
-            <div class="minus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>Super simple – just message me through any convenient platform (Instagram, Telegram, WhatsApp, or the contact form on this site). We’ll discuss your preferred date, city, and session type. Once confirmed, I’ll reserve the date for you and send over preparation tips.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__question">
-            <h3>Can I choose the location myself?</h3>
-           <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>Absolutely! If there’s a special place you love or have in mind — I’m happy to shoot there. If you’re unsure, I can suggest beautiful spots with great lighting and atmosphere, tailored to your vision and mood.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__question">
-            <h3>How long does the shoot take?</h3>
-            <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>That depends on the package you choose. On average, sessions last from 1 to 4 hours. We’ll plan the pace and type of shoot together — from relaxed city strolls and love stories to more dynamic or editorial sessions.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__question">
-            <h3>When will I receive the photos?</h3>
-            <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>You’ll receive your edited photos within 7–14 days. For event and wedding sessions — up to 30 days. I deliver them in a stylish online gallery, where you can download them in full quality or easily share with friends and family.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-           <div class="accordion__question">
-            <h3>Will you help me pose?</h3>
-             <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>Definitely! I’ll guide you gently throughout the session — where to look, how to move, how to relax. The goal is to make you feel comfortable and natural. My approach is relaxed, and I’ll never force awkward poses. The result? Real, expressive, and beautiful photos.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-          <div class="accordion__question">
-            <h3>What should I wear?</h3>
-             <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>After booking, I’ll send you a style guide with suggestions for colors, textures, and combinations. The most important thing is that you feel confident in your outfit. I’m also happy to help you coordinate looks or plan something cohesive for couples or groups.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-           <div class="accordion__question">
-            <h3>Do you retouch the photos?</h3>
-             <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>Yes, all photos are color-corrected and lightly retouched. My editing style is clean and natural — no overdone filters or fake skin. Just you, at your best. Extra retouching is available upon request.</p>
-          </div>
-        </div>
-        <div class="accordion__item">
-           <div class="accordion__question">
-            <h3>Can I get the raw files?</h3>
-            <div class="plus"></div>
-          </div>
-          <div class="accordion__answer">
-           <p>I don’t deliver RAW files. My work includes not only shooting, but also careful selection and editing to create a complete and polished result. You’ll receive only the best images, ready for printing, sharing, or publishing.</p>
-          </div>
+          <button class="button">Book Now</button>
         </div>
       </div>
+    </div>
+  </section>
 
-    </section>
-
-<!-- FOOTER -->
-
-    <footer class="footer white_section wrapper" id="contacts">
-      <div>
-        <h3>Like my portfolio? Sign up for a shoot!</h3>
+  <!--  SECTION FAQ -->
+  <section class="full__width__section dark_bg" id="faq">
+  <div class="faq content__wrapper">
+    <div class="faq__description">
+      <h2>Frequently Asked Questions</h2>
+      <p>Everything You Wanted to Ask (and a Bit More)</p>
+    </div>
+    <div class="accordion">
+      <div class="accordion__item active">
+        <div class="accordion__question">
+          <h3>How do I book a shoot?</h3>
+          <div class="minus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>Super simple – just message me through any convenient platform (Instagram, Telegram, WhatsApp, or the
+            contact form on this site). We’ll discuss your preferred date, city, and session type. Once confirmed, I’ll
+            reserve the date for you and send over preparation tips.</p>
+        </div>
       </div>
-        <form class="form">
-          <input type="text" placeholder="Your Name">
-          <input type="text" value="+1">
-          <button type="submit" class="button">book now</button>
-        </form>
-      <div class="navigation dark_section footer__navigation">
-       <ul>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>Can I choose the location myself?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>Absolutely! If there’s a special place you love or have in mind — I’m happy to shoot there. If you’re
+            unsure, I can suggest beautiful spots with great lighting and atmosphere, tailored to your vision and mood.
+          </p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>How long does the shoot take?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>That depends on the package you choose. On average, sessions last from 1 to 4 hours. We’ll plan the pace
+            and type of shoot together — from relaxed city strolls and love stories to more dynamic or editorial
+            sessions.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>When will I receive the photos?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>You’ll receive your edited photos within 7–14 days. For event and wedding sessions — up to 30 days. I
+            deliver them in a stylish online gallery, where you can download them in full quality or easily share with
+            friends and family.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>Will you help me pose?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>Definitely! I’ll guide you gently throughout the session — where to look, how to move, how to relax. The
+            goal is to make you feel comfortable and natural. My approach is relaxed, and I’ll never force awkward
+            poses. The result? Real, expressive, and beautiful photos.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>What should I wear?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>After booking, I’ll send you a style guide with suggestions for colors, textures, and combinations. The
+            most important thing is that you feel confident in your outfit. I’m also happy to help you coordinate looks
+            or plan something cohesive for couples or groups.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>Do you retouch the photos?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>Yes, all photos are color-corrected and lightly retouched. My editing style is clean and natural — no
+            overdone filters or fake skin. Just you, at your best. Extra retouching is available upon request.</p>
+        </div>
+      </div>
+      <div class="accordion__item">
+        <div class="accordion__question">
+          <h3>Can I get the raw files?</h3>
+          <div class="plus"></div>
+        </div>
+        <div class="accordion__answer">
+          <p>I don’t deliver RAW files. My work includes not only shooting, but also careful selection and editing to
+            create a complete and polished result. You’ll receive only the best images, ready for printing, sharing, or
+            publishing.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  </div>
+
+  <!-- FOOTER -->
+
+  <footer class="footer" id="contacts">
+    <div class="content__wrapper white_bg">
+      <h3>Like my portfolio? Sign up for a shoot!</h3>
+    </div>
+    <form class="form">
+      <input type="text" placeholder="Your Name">
+      <input type="text" value="+1">
+      <button type="submit" class="button">book now</button>
+    </form>
+    </div>
+
+    <div class="dark_bg footer__navigation">
+      <ul>
         <li><a href="#">instagram</a></li>
         <li><a href="#">telegram</a></li>
         <li><a href="#">whatsapp</a></li>
         <li><a href="#">Europe</a></li>
         <li><a href="#">+1 234 9843572</a></li>
-       </ul>
-      </div>
-    </footer>
+      </ul>
+    </div>
+
+  </footer>
 </body>
+
 </html>

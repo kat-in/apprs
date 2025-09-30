@@ -1,42 +1,23 @@
 @use '../abstract' as *;
 
 /* HEADER  START */
+
 .header {
-    background-color: $color-dark;
-    color: $color-white;
+  display: flex;
+  flex-direction: row;
+  max-height: 60px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  @include media-tablet {
     display: flex;
-    min-height: 60px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-      @include media-tablet {
-        display: flex;
-    }
-      @include media-mobile {
-        display: flex;
-    }
+  }
 
-}
-
-.header .hamburger_icon {
-  @include media-desktop {
-        display: none;
-    }
   @include media-mobile {
-        display: flex;
-    }
-  @include media-tablet {
-        display: flex;
-    }
-}
+    display: flex;
+  }
 
-.header .navigation {
-  @include media-mobile {
-        display: none;
-    }
-  @include media-tablet {
-        display: none;
-    }
 }
 
 .logo {
@@ -47,4 +28,3 @@
   width: 60px;
   height: 60px;
 }
-

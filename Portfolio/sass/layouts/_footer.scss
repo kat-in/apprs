@@ -7,6 +7,23 @@
   justify-content: center;
   gap: 20px;
   padding: 40px 0 0 0;
+
+   a {
+    text-decoration: none;
+    color: $color-white;
+
+    &:hover {
+      text-decoration: none;
+      color: $color-red;
+      @extend %transition;
+      cursor: pointer;
+      }
+  }
+
+  h3 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 
@@ -104,13 +121,17 @@
   text-transform: uppercase;
 
 
-
-
   ul {
     display: flex;
     list-style: none;
     justify-content: center;
     align-items: center;
+
+    li {
+  padding: 0 20px;
+    text-align: center;
+    }
+   
 
     @include media-mobile {
       flex-direction: column;
@@ -150,5 +171,15 @@
     color: $color-white;
     transition: none !important;
     animation: none !important;
+  }
+
+  .footer__navigation a {
+      transition: none !important;
+    animation: none !important;
+    scroll-behavior: auto !important;
+
+    &:hover {
+      color: inherit; 
+    }
   }
 }

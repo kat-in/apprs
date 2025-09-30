@@ -44,7 +44,7 @@
 
 
 @mixin media-mobile {
-  @media (max-width: $mobile-width) and (pointer: coarse) {
+  @media (max-width: $mobile-width) {
     @content;
   }
 }

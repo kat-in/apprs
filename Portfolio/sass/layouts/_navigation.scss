@@ -7,6 +7,14 @@
   text-transform: uppercase;
   @include font($height: 2.4rem, $size: 1.6rem);
 
+  @include media-mobile {
+    display: none;
+  }
+
+  @include media-tablet {
+    display: none;
+  }
+
   li {
     padding: 0 20px;
     text-align: center;
