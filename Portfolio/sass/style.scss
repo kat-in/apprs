@@ -285,7 +285,10 @@
 
 /* ABOUT SECTION START */
 
+
 .about {
+  display: flex;
+  flex-direction: row;
   justify-content: flex-start;
 
   @include media-tablet {
