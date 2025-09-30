@@ -10,14 +10,6 @@ html {
   font-size: 10px;
   scroll-behavior: smooth;
 }
-
-@include media-touch {
-  html {
-    scroll-behavior: auto !important;
-  }
-}
-
-
 body {
   @include font($size: 1.6rem, $weight: 400, $height:2.4rem);
   font-family: "Mulish", sans-serif;

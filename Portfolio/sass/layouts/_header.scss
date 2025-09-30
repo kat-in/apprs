@@ -10,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
       @include media-tablet {
-        display: none;
+        display: flex;
     }
       @include media-mobile {
         display: flex;
@@ -25,10 +25,16 @@
   @include media-mobile {
         display: flex;
     }
+  @include media-tablet {
+        display: flex;
+    }
 }
 
 .header .navigation {
   @include media-mobile {
+        display: none;
+    }
+  @include media-tablet {
         display: none;
     }
 }
