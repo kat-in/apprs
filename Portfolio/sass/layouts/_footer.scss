@@ -136,3 +136,19 @@
     }
   }
 }
+
+@include media-touch {
+  .button:hover {
+    background-color: $color-dark;
+    color: $color-white;
+    transition: none !important;
+    animation: none !important;
+  }
+
+   .button:active {
+    background-color: $color-dark;
+    color: $color-white;
+    transition: none !important;
+    animation: none !important;
+  }
+}
