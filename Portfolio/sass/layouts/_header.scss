@@ -10,13 +10,17 @@
   justify-content: space-between;
   align-items: center;
 
-  @include media-tablet {
-    display: flex;
-  }
 
-  @include media-mobile {
-    display: flex;
-  }
+//для гамбургер меню тестово
+position: relative;
+
+  // @include media-tablet {
+  //   display: flex;
+  // }
+
+  // @include media-mobile {
+  //   display: flex;
+  // }
 
 }
 
