@@ -674,10 +674,10 @@
   }
 }
 
-.accordion__item.active .accordion__question:hover {
-  color: white;
-  cursor: pointer;
-}
+// .accordion__item.active .accordion__question:hover {
+//   color: white;
+//   cursor: pointer;
+// }
 
 
 .minus {
@@ -701,7 +701,7 @@
 }
 
 .accordion__question:hover .minus {
-  background-image: url(../src/img/minus.svg);
+  background-image: url(../src/img/minus-hover.svg);
   @extend %transition;
   cursor: pointer;
 }
