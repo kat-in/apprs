@@ -7,6 +7,35 @@ const state = {
 const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('.hamburger__menu')
 const nav_items = nav.querySelectorAll('li')
+const faq = document.querySelectorAll('.accordion__question')
+
+// FAQ
+faq.forEach((question) => {
+    const faq_item = question.parentNode;
+    question.addEventListener('click', (e) => {
+        if (faq_item.classList.contains('active')) {
+            faq.forEach(item => {
+                item.parentNode.classList.remove('active')
+                item.lastElementChild.classList.remove('minus')
+                item.lastElementChild.classList.add('plus')
+            })
+        }
+        else {
+            faq.forEach(item => {
+                item.parentNode.classList.remove('active')
+                item.lastElementChild.classList.remove('minus')
+                item.lastElementChild.classList.add('plus')
+            })
+            faq_item.classList.add('active')
+
+            question.lastElementChild.classList.remove('plus')
+            question.lastElementChild.classList.add('minus')
+        }
+    })
+})
+
+
+// Hamburger
 
 hamburger.addEventListener('click', (e) => {
     if (nav.getAttribute('id') === 'hide') {
