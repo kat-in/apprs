@@ -687,7 +687,7 @@
   background-position: center center;
   height: 24px;
   width: 24px;
-  ;
+
 }
 
 .plus {
@@ -717,6 +717,10 @@
   .accordion__question:hover .plus {
     transition: none !important;
     background-image: url(../src/img/plus.svg);
+  }
+  .accordion__question:hover .minus {
+    transition: none !important;
+    background-image: url(../src/img/minus.svg);
   }
 }
 
