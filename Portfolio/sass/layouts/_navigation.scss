@@ -34,7 +34,7 @@
 }
 
 @include media-touch {
-  .navigation a {
+  .navigation a, .hamburger__menu a {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
