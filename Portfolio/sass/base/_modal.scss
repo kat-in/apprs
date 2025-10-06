@@ -19,6 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
     padding: 60px 20px;
     gap: 20px;
     isolation: isolate;
@@ -52,6 +53,7 @@
 
 }
 
+
 .modal_cross {
     display: flex;
     flex-direction: row;
@@ -64,4 +66,8 @@
     right: 0px;
     top: 0px;
 
+}
+
+.modal_active {
+    display: flex;
 }

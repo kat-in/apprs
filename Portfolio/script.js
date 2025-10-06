@@ -4,6 +4,38 @@ const hamburger = document.querySelector('.hamburger')
 const nav = document.querySelector('.hamburger__menu')
 const nav_items = nav.querySelectorAll('li')
 const faq = document.querySelectorAll('.accordion__question')
+const priceCardButtons = document.querySelectorAll('.price__card__button button')
+const modalOverlay = document.querySelector('.modal__overlay')
+const modalCloseIcon = document.querySelector('.modal_cross')
+const modal = modalOverlay.querySelector('.modal')
+
+
+
+
+//PriceCardModal
+
+const handleOutsideClick = (e) => {
+    if (e.target.classList.contains('modal_active')) {
+        modalOverlay.classList.remove('modal_active')
+        document.body.classList.remove('fixed')
+        document.body.removeEventListener('click', handleOutsideClick);
+    }
+}
+
+priceCardButtons.forEach((button) => {
+    button.addEventListener('click', (e) => {
+        modalOverlay.classList.add('modal_active')
+        document.body.classList.add('fixed')
+        document.body.addEventListener('click', handleOutsideClick)
+    })
+})
+
+modalCloseIcon.addEventListener('click', () => {
+    modalOverlay.classList.remove('modal_active')
+    document.body.classList.remove('fixed');
+})
+
+
 
 // FAQ
 faq.forEach((question, index) => {
