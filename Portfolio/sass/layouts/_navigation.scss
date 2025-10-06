@@ -7,13 +7,13 @@
   text-transform: uppercase;
   @include font($height: 2.4rem, $size: 1.6rem);
 
-  @include media-mobile {
-    display: none;
-  }
+ @media (max-width: 1440px) {
+  display: flex;
+ }
 
-  @include media-tablet {
-    display: none;
-  }
+  @media (max-width: 768px) {
+  display: none;
+ }
 
   li {
     padding: 0 20px;
@@ -34,7 +34,7 @@
 }
 
 @include media-touch {
-  .navigation a {
+  .navigation a, .hamburger__menu a {
     transition: none !important;
     animation: none !important;
     scroll-behavior: auto !important;
