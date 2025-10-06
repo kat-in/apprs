@@ -87,7 +87,7 @@
 
             @media (max-width: 500px) {
                 width: 300px;
-   
+
             }
 
         }
@@ -109,6 +109,16 @@
     height: 60px;
     right: 0px;
     top: 0px;
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    @include media-touch {
+        &:hover {
+            cursor: none;
+        }
+    }
 
 }
 
