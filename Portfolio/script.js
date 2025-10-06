@@ -12,6 +12,70 @@ const modal = modalOverlay.querySelector('.modal')
 
 
 
+// Слайдер
+
+const slider = document.querySelector('.slider');
+const slides = Array.from(slider.children);
+const speed = 2;
+const zone = 0.3; // активная зона 30% слева/справа
+let scrollTimer = null;
+
+// Центрирование
+function centerSlider() {
+  const totalWidth = slides.reduce((sum, s) => {
+    const style = getComputedStyle(s);
+    const marginRight = parseInt(style.marginRight) || 0;
+    return sum + s.offsetWidth + marginRight;
+  }, 0);
+
+  slider.scrollLeft = (totalWidth - slider.clientWidth) / 2;
+}
+
+// центр при загрузке и при ресайзе
+window.addEventListener('load', centerSlider);
+window.addEventListener('resize', centerSlider);
+
+//  десктоп прокрутка при наведении
+function startScroll(direction) {
+  const maxScroll = slider.scrollWidth - slider.clientWidth;
+  scrollTimer = setInterval(() => {
+    slider.scrollLeft = Math.max(0, Math.min(slider.scrollLeft + speed * direction, maxScroll));
+  }, 16);
+}
+
+slider.addEventListener('mousemove', e => {
+  const x = e.clientX - slider.getBoundingClientRect().left;
+  const w = slider.clientWidth;
+
+  clearInterval(scrollTimer);
+
+  if (x < w * zone) startScroll(-1);       // влево
+  else if (x > w * (1 - zone)) startScroll(1); // вправо
+});
+
+slider.addEventListener('mouseleave', () => clearInterval(scrollTimer));
+
+// Мобилка свайп 
+let isTouching = false;
+let startX = 0;
+let scrollStart = 0;
+
+slider.addEventListener('touchstart', e => {
+  isTouching = true;
+  startX = e.touches[0].pageX;
+  scrollStart = slider.scrollLeft;
+});
+
+slider.addEventListener('touchmove', e => {
+  if (!isTouching) return;
+  const dx = e.touches[0].pageX - startX;
+  const maxScroll = slider.scrollWidth - slider.clientWidth;
+  slider.scrollLeft = Math.max(0, Math.min(scrollStart - dx, maxScroll));
+});
+
+slider.addEventListener('touchend', () => isTouching = false);
+
+
 //PriceCardModal
 
 const handleOutsideClick = (e) => {

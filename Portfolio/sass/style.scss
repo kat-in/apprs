@@ -395,14 +395,25 @@
   }
 }
 
-
+.slider {
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+  cursor: grab;
+  position: relative;
+}
 
 
 .slider {
   @include slide($direction: row, $padding: 0 20px);
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;  
+  scroll-behavior: smooth;
+  
 }
 
 .slide_1_8 {
