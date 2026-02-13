@@ -1,0 +1,102 @@
+@use '../abstract' as *;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+  font-size: 10px;
+  scroll-behavior: smooth;
+
+}
+body {
+  @include font($size: 1.6rem, $weight: 400, $height:2.4rem);
+  font-family: "Mulish", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+}
+
+h1 {
+  @include font($size: 11.6rem, $weight: 300, $height: 13.2rem)
+}
+
+h2 {
+  @include font($size: 3.2rem, $height:4rem)
+}
+
+h3 {
+  @include font($size: 2rem,  $height: 2.8rem)
+}
+
+h4 {
+  @include font($size: 1.6rem, $height: 2.4rem)
+}
+
+.small {
+  @include font($size: 1.2rem, $weight: 500, $height: 1.6rem)
+}
+
+.decoration {
+  font-family: 'Oswald';
+  text-transform: uppercase;  
+  @include font($size:  4.8rem, $weight: 300, $height: 5.4rem)
+}
+
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  height: 60px;
+  min-width: 200px;
+  padding: 0 20px;
+  margin: 0;
+  border: none;
+  font-family: 'Oswald';
+  text-transform: uppercase;
+  background-color: $color-dark;
+  color: $color-white;
+  @include font($size: 1.6rem, $height: 2.4rem)
+  
+}
+
+.button:hover {
+  background-color: $color-red;
+  color: $color-dark;
+  border: none;
+  @extend %transition;
+  cursor: pointer;
+}
+
+.img_small img {
+  display: block;
+  object-fit: cover;
+  height: 220px;
+  width: 220px;
+}
+
+.img_big img {
+  display: block;
+  height: 534px;
+  width: 400px;
+}
+
+.img_medium img {
+    display: block;
+    height: 374px;
+    width: 280px;
+}
+

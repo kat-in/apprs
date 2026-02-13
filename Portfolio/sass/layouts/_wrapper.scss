@@ -1,0 +1,32 @@
+@use '../abstract' as *;
+
+.full__width__section {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.dark_bg {
+  background-color: $color-dark;
+  color: $color-white;
+}
+
+.white_bg {
+  background-color: $color-white;  
+  color: $color-dark;
+}
+
+.content__wrapper {
+  max-width: $content-width;
+  margin: auto;
+}
+
+.section__wrapper {
+  display: flex;
+  gap:40px;
+  padding: 60px 20px;
+}
+
