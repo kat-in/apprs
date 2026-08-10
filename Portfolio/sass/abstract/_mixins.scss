@@ -1,0 +1,57 @@
+@use './constants' as *;
+
+@mixin font ($size, $weight: 400, $height, $style: normal) {
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+  font-style: $style;
+}
+
+@mixin slide ($display: flex, $direction, $padding: 0) {
+  display: $display;
+  flex-direction: $direction;
+  padding: $padding;
+}
+
+@mixin disable-effects {
+  * {
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+
+  *:hover {
+    all: unset;
+  }
+}
+
+
+@mixin media-desktop {
+  @media (max-width: $desktop-width) {
+    @content;
+  }
+}
+@mixin media-big-tablet {
+  @media (max-width: $big-tablet-width) {
+    @content;
+  }
+}
+
+@mixin media-tablet {
+  @media (max-width: $tablet-width) {
+    @content;
+  }
+}
+
+
+@mixin media-mobile {
+  @media (max-width: $mobile-width) {
+    @content;
+  }
+}
+
+@mixin media-touch {
+  @media (pointer: coarse) and (hover: none) {
+@content;
+}
+}
+

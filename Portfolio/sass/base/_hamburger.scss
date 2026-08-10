@@ -1,0 +1,157 @@
+@use '../abstract' as *;
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    height: 60px;
+    width: 60px;
+    //для крестика убираем
+    gap: 6px;
+    padding: 0 20px;
+    position: relative;
+    //
+    //для крестика добавляем
+    //  padding: 20px;
+    //  position: relative;
+    //
+
+
+    @include media-desktop {
+        display: none;
+    }
+
+    @include media-mobile {
+        display: flex;
+    }
+
+    // @include media-tablet {
+    //     display: flex;
+    // }
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+}
+
+.cross {
+    gap: 0px;
+    padding: 20px;
+}
+
+.line_left {
+    position: absolute;
+    top: 29px;
+    left: 18px;
+    height: 2px;
+    width: 25px;
+    background-color: $color-white;
+    transform: rotate(-45deg);
+    transition: all 0.5s ease;
+
+}
+
+.line_rigth {
+    position: absolute;
+    top: 29px;
+    left: 18px;
+    height: 2px;
+    width: 25px;
+    background-color: $color-white;
+    transform: rotate(45deg);
+    transition: all 0.5s ease;
+}
+
+
+.hamburger_line {
+    height: 2px;
+    width: 20px;
+    background-color: $color-white;
+    transition: all 0.5s ease;
+}
+
+.hamburger_small_line {
+    height: 2px;
+    width: 12px;
+    background-color: $color-white;
+    transition: all 0.5s ease;
+}
+
+
+
+.hamburger__menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    @include font($height: 2.4rem, $size: 1.6rem);
+    padding: 0px;
+    position: fixed;
+    top: 60px;
+    z-index: 999;
+    width: 100%;
+    height: calc(100% - 60px);
+    overflow-x: hidden;
+    overflow-y: auto; // вертикальный скролл
+    transition: right 0.7s ease-in-out;
+
+
+    @include media-desktop {
+        display: none;
+    }
+
+    @include media-mobile {
+        display: flex;
+    }
+
+
+    @media (max-width: 768px) {
+        display: flex;
+    }
+   
+
+    li {
+        height: 60px;
+        padding: 20px;
+        text-align: center;
+        align-self: stretch;
+    }
+
+    a {
+        text-decoration: none;
+        color: $color-white;
+
+        &:hover {
+            text-decoration: none;
+            color: $color-red;
+            @extend %transition;
+            cursor: pointer;
+        }
+    }
+
+    background-color: $color-dark;
+}
+
+//для бургер меню
+
+#hide {
+    transform: translateX(100%);
+    transition: all 0.7s ease-in-out;
+    pointer-events: none;
+}
+
+#show {
+    transform: translateX(0);
+    transition: all 0.7s ease-in-out;
+    pointer-events: auto;
+    right: 0;
+}
+
+.fixed {
+    overflow: hidden;
+}
